@@ -17,7 +17,7 @@ class SubSectionPage extends StatelessWidget {
         decoration: BoxDecoration(
           image: DecorationImage(
             image: AssetImage(
-                'assets/background_image.jpg'), // Background image path
+                'assets/background2.jpeg'), // Background image path
             fit: BoxFit.cover,
           ),
         ),

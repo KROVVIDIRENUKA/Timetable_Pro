@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+/*import 'package:flutter/material.dart';
 import 'CsePage.dart';
 import 'AimlPage.dart';
 import 'CaiPage.dart';
@@ -22,7 +22,13 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.red,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: BranchList(),
+      initialRoute: '/'
+      routes: {
+        '/':(context) => LoginPage(),
+
+
+      }
+      
     );
   }
 }
@@ -37,19 +43,19 @@ class BranchList extends StatelessWidget {
     "ECT",
     "EEE",
     "CIVIL",
-    "MECHANICAL"
+    "MECH"
   ];
 
   final List<String> images = [
-     "assets/cse.png",
-    "assets/cst.png",
-    "assets/cai.png",
-    "assets/aiml.png",
-    "assets/ece.png",
-    "assets/ect.png",
-    "assets/eee.png",
-    "assets/civil.png",
-    "assets/mech.png",
+    "assets/cse1.png",
+    "assets/cst1.png",
+    "assets/cai1.jpeg",
+    "assets/aim1.jpg",
+    "assets/ece1.png",
+    "assets/ect1.png",
+    "assets/eee1.png",
+    "assets/civill.jpeg",
+    "assets/mechanical.jpg",
 
   ];
 
@@ -59,7 +65,7 @@ class BranchList extends StatelessWidget {
       decoration: BoxDecoration(
         image: DecorationImage(
           image: AssetImage(
-              "assets/background.jpg"), // Background image path
+              "assets/background2.jpeg"), // Background image path
           fit: BoxFit.cover,
         ),
       ),
@@ -131,7 +137,7 @@ class BranchList extends StatelessWidget {
                           MaterialPageRoute(builder: (context) => CivilPage()),
                         );
                         break;
-                      case "MECHANICAL":
+                      case "MECH":
                         Navigator.push(
                           context,
                           MaterialPageRoute(
@@ -160,14 +166,14 @@ class BranchList extends StatelessWidget {
                         right: 0,
                         child: Container(
                           color: Colors.black.withOpacity(0.6),
-                          padding: EdgeInsets.symmetric(vertical: 8),
+                          padding: EdgeInsets.symmetric(vertical: 4),
                           child: Center(
                             child: Text(
                               branches[index],
                               style: TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.bold,
-                                fontSize: 16,
+                                fontSize: 10,
                               ),
                             ),
                           ),
@@ -183,6 +189,31 @@ class BranchList extends StatelessWidget {
       ),
     );
   }
+}*/
+// Repeat the same for other section pages (CAI, AIML, ECE, ECT, EEE, CIVIL, MECHANICAL)
+import 'package:flutter/material.dart';
+import 'loginpage.dart';
+import 'branchlist.dart';
+void main() {
+  runApp(MyApp());
+}
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Branches',
+      theme: ThemeData(
+        primarySwatch: Colors.red,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+      ),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => LoginPage(),
+        '/branchlist': (context) => BranchList(),
+      },
+    );
+  }
 }
 
-// Repeat the same for other section pages (CAI, AIML, ECE, ECT, EEE, CIVIL, MECHANICAL)
+

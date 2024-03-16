@@ -12,7 +12,7 @@ class SectionPage extends StatelessWidget {
       decoration: BoxDecoration(
         image: DecorationImage(
           image: AssetImage(
-              'assets/background_image.jpg'), // Set your background image here
+              'assets/background2.jpeg'), // Set your background image here
           fit: BoxFit.cover,
         ),
       ),

@@ -62,51 +62,26 @@ flutter:
   assets:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
-      - assets\background.jpg
-      - assets\ground.jpg
-      - assets\cse.png
-      - assets\cst.png
-      - assets\cai.png
-      - assets\aiml.png
-      - assets\ece.png
-      - assets\ect.png
-      - assets\eee.png
-      - assets\civil.png
-      - assets\mech.png
-      - assets\aiml.jpg
-      - assets\cai.jpeg
-      - assets\civil.jpeg
-      - assets\cse.jpeg
-      - assets\cst.jpg
-      - assets\ece.jpg
-      - assets\ect.jpeg
-      - assets\eee.jpg
-      - assets\mech.jpeg
-      - assets\cai 1.jpeg
-      - assets\cai 2.jpg
-      - assets\aiml 1.jpg
-      - assets\aiml 2.jpeg
-      - assets\cse 1.jpeg
-      - assets\cse 2.jpg
-      - assets\cse 3.jpg
-      - assets\cse 4.jpg
-      - assets\cst 1.jpg
-      - assets\cst 2.jpg
-      - assets\ece 1.jpeg
-      - assets\ece 2.jpeg
-      - assets\ece 3.png
-      - assets\ece 4.jpg
-      - assets\ect 1.jpeg
-      - assets\ect 2.jpeg
-      - assets\civil 1.jpg
-      - assets\civil 2.jpeg
-      - assets\mech 1.jpeg
-      - assets\mech 2.jpeg
-      - assets\eee 1.jpeg
-      - assets\eee 2.jpg
-
-
-
+      - assets\seca.jpg
+      - assets\secb.jpg
+      - assets\secc.jpg
+      - assets\secd.jpg
+      - assets/aim1.jpg
+      - assets/cai1.jpeg
+      - assets/civill.jpeg
+      - assets/cse1.png
+      - assets/cst1.png
+      - assets/ece1.png
+      - assets/ect1.png
+      - assets/eee1.png
+      - assets/mechanical.jpg
+      - assets/background.jpg
+      - assets/student.jpg
+      - assets/teacher.jpg
+      - assets/timetable1.jpeg
+      - assets/image1.jpg
+      - assets/background3.jpg
+      - assets/background2.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

@@ -11,7 +11,7 @@ class TimetablePage extends StatelessWidget {
         decoration: BoxDecoration(
           image: DecorationImage(
             image: AssetImage(
-                'assets/background.jpg'), // Replace 'assets/background_image.jpg' with your image path
+                'assets/ground.jpg'), // Replace 'assets/background2.jpeg' with your image path
             fit: BoxFit.cover,
           ),
         ),
@@ -26,48 +26,43 @@ class TimetablePage extends StatelessWidget {
     // Define your timetable data here
     List<List<String>> timetableData = [
       [
-        '8:00 AM',
-        'Math',
-        'English',
-        'Science',
-        'Geography',
-        'Physics',
-        'History',
-        'Chemistry'
+        '09:30 AM-10:30 AM',
+        'CC',
+        'DL',
+        'CN',
+        'OOSE',
+        'DL',
+        'OOSE'
       ],
       [
-        '9:00 AM',
-        'History',
-        'Math',
-        'Physics',
-        'Math',
-        'English',
-        'Biology',
-        'Geography'
+        '10:30 AM-11:20 AM',
+        'MCCP-2',
+        'OOSE',
+        'DL LAB',
+        'OOSE LAB',
+        'CN LAB',
+        'DL'
       ],
       [
-        '10:00 AM',
-        'English',
-        'Biology',
-        'Chemistry',
-        'Physics',
-        'Geography',
-        'Physics',
-        'English'
+        '11:20 AM-12:10 PM',
+        'MCCP-2',
+        'CC',
+        'DL LAB',
+        'OOSE LAB',
+        'CN LAB',
+        'CC'
       ],
       [
-        '11:00 AM',
-        'Physics',
-        'Geography',
-        'Math',
-        'Biology',
-        'Chemistry',
-        'History',
-        'Biology'
+        '12:10 PM-01:00 PM',
+        'MCCP-2',
+        'CN',
+        'DL LAB',
+        'OOSE LAB',
+        'CN LAB',
+        'LIBRARY'
       ],
       [
-        '12:00 PM',
-        'Lunch',
+        '1:00 PM-02:00 PM',
         'Lunch',
         'Lunch',
         'Lunch',
@@ -76,34 +71,31 @@ class TimetablePage extends StatelessWidget {
         'Lunch'
       ],
       [
-        '1:00 PM',
-        'Chemistry',
-        'History',
-        'Biology',
-        'English',
-        'Biology',
-        'Chemistry',
-        'Physics'
+        '2:00 PM-02:50 PM',
+        'CN',
+        'MCCP-2',
+        'CC',
+        'DL',
+        'CC',
+        'DL'
       ],
       [
-        '2:00 PM',
-        'Geography',
-        'Physics',
-        'History',
-        'Chemistry',
-        'History',
-        'English',
-        'Geography'
+        '2:50 PM-3:40 PM',
+        'DL',
+        'MCCP-2',
+        'PEHV',
+        'CN',
+        'OOSE',
+        'CN'
       ],
       [
-        '3:00 PM',
-        'Biology',
-        'Chemistry',
-        'English',
-        'History',
-        'Math',
-        'Math',
-        'History'
+        '3:40 PM-4:30 PM',
+        'OOSE',
+        'MCCP-2',
+        'PEHV',
+        'CC',
+        'CN',
+        'SPORTS'
       ],
     ];
 
@@ -117,7 +109,6 @@ class TimetablePage extends StatelessWidget {
         DataColumn(label: Text('Thursday')),
         DataColumn(label: Text('Friday')),
         DataColumn(label: Text('Saturday')),
-        DataColumn(label: Text('Sunday')),
       ],
       rows: timetableData.map((rowData) {
         return DataRow(cells: [
@@ -128,7 +119,6 @@ class TimetablePage extends StatelessWidget {
           DataCell(Text(rowData[4])),
           DataCell(Text(rowData[5])),
           DataCell(Text(rowData[6])),
-          DataCell(Text(rowData[7])),
         ]);
       }).toList(),
     );

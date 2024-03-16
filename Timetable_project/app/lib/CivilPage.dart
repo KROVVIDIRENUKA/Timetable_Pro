@@ -1,18 +1,30 @@
 import 'package:flutter/material.dart';
 import 'Civil_details/CivilDetailsPage1.dart';
 import 'Civil_details/CivilDetailsPage2.dart';
-
+import 'branchlist.dart';
 class CivilPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text('Civil Section'),
+        actions: [
+            IconButton(
+              icon: Icon(Icons.home),
+              onPressed: () {
+                // Navigate to the same page (BranchList)
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(builder: (context) => BranchList()),
+                );
+              },
+            ),
+          ],
       ),
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/civil.jpeg"),
+            image: AssetImage("assets/background2.jpeg"),
             fit: BoxFit.cover,
           ),
         ),
@@ -33,11 +45,11 @@ class CivilPage extends StatelessWidget {
                     },
                     child: Container(
                       margin: EdgeInsets.all(16.0),
-                      width: 200,
+                      width: 250,
                       height: 200,
                       color: Colors.blue,
                       child: Image.asset(
-                        "assets/civil 1.jpg", // Replace with your item 1 image path
+                        "assets/seca.jpg", // Replace with your item 1 image path
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -55,16 +67,17 @@ class CivilPage extends StatelessWidget {
                     },
                     child: Container(
                       margin: EdgeInsets.all(16.0),
-                      width: 200,
+                      width: 250,
                       height: 200,
                       color: Colors.green,
                       child: Image.asset(
-                        "assets/civil 2.jpeg", // Replace with your item 2 image path
+                        "assets/secb.jpg", // Replace with your item 2 image path
                         fit: BoxFit.cover,
                       ),
                     ),
                   ),
                 ),
+                SizedBox(height: 200.0),
               ],
             ),
           ),
